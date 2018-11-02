@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrusel 3D</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- importamos la libreria de firebase cliente para javascript -->
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+
+    <!-- Logica de comunicación con firebase  -->
+    <script src="js/switch.js"></script>
+    <link href="css/switch.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div class="scene">
+        <div class="carousel">
+            <div class="carousel__cell">pared 1
+
+                <div align="center">
+                    <h2>Luz</h2>
+                    <label style="width: 70px; height:90px;" class="">
+                      <!--   <input class="fas fa-lightbulb" id="switch" type="checkbox">
+                        <span class="switch-label" data-off="Off" data-on="On"></span>
+                        <spanclass="dashicons dashicons-lightbulb"></span> -->
+                        <input type="button" class="fas fa-lightbulb encendida">
+                        <i   class="fas fa-lightbulb encendida" id="switch" ></i>
+                       <!--  <span class="switch-handle"></span> -->
+                    </label>
+                </div>
+            </div>
+            <div class="carousel__cell">pared 2</div>
+            <div class="carousel__cell">pared 3</div>
+            <div class="carousel__cell">pared 4</div>
+            <!--  <div class="carousel__cell">5</div>
+          <div class="carousel__cell">6</div>
+          <div class="carousel__cell">7</div>
+          <div class="carousel__cell">8</div>
+          <div class="carousel__cell">9</div>
+          <div class="carousel__cell">10</div>
+          <div class="carousel__cell">11</div>
+          <div class="carousel__cell">12</div>
+          <div class="carousel__cell">13</div>
+          <div class="carousel__cell">14</div>
+          <div class="carousel__cell">15</div> -->
+        </div>
+    </div>
+
+    <div class="carousel-options">
+        <p>
+            <label style="visibility: hidden;">
+                Cells
+                <input class="cells-range" type="range" min="3" max="4" value="9" />
+            </label>
+        </p>
+        <p>
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+        </p>
+        <p style="visibility: hidden;">
+            Orientation:
+            <label>
+                <input type="radio" name="orientation" value="horizontal" checked />
+                horizontal
+            </label>
+            <label>
+                <script src="js/script.js"></script>
+                <input type="radio" name="orientation" value="vertical" />
+                vertical
+            </label>
+        </p>
+    </div>
+</body>
+
+</html>
